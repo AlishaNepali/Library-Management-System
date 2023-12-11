@@ -1,0 +1,21 @@
+{% extends 'nav.html' %}
+
+
+
+
+{% block content %}
+<form action="" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+
+    <button type="submit" class="btn btn-success">Add</button>
+
+
+
+
+
+</form>
+
+
+
+{% endblock %}

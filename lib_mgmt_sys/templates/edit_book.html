@@ -1,0 +1,21 @@
+{% extends 'nav.html' %}
+
+
+
+
+{% block content %}
+<form action="" method="POST">
+    {% csrf_token %}
+    {{form}}
+
+    <button type="submit" class="btn btn-success">Save</button>
+
+
+
+
+
+</form>
+
+
+
+{% endblock %}
